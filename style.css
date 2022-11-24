@@ -1,0 +1,25 @@
+@import url("styles/header.css");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Pacifico&family=Poppins:wght@300;400;500;700&display=swap');
+@import url("styles/banner.css");
+@import url("styles/carousel.css");
+@import url("styles/topics.css");
+@import url("styles/contact.css");
+@import url("styles/footer.css");
+
+:root {
+   --background-body: #EBECEE;
+   --white: #ffffff;
+   --category-font-color: #EB9B00;
+   --gradient-blue: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+   --main-font: "Poppins";
+   --blue-text: #002F52;
+}
+
+body {
+    background-color: var(--background-body);
+    font-family: var(--main-font);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
