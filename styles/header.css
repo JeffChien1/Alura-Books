@@ -7,6 +7,13 @@
     background-position: center;
 }
 
+.container__button:checked ~ .container__label > .header__menu-hamburguer {
+    background-image: url(../image/Menu\ Aberto.svg);
+}
+
+.container__button:checked ~.container__label {
+    background: var(--gradient-blue);
+}
 .header {
     background-color: var(--white);
     display: flex;
@@ -55,4 +62,107 @@
 
 .container__button{
     display: none;
+}
+
+.container__title{
+    display: none;
+}
+
+.options{
+    display: none;
+}
+
+.container__text {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .container__title, 
+    .container__title--bold {
+        font-family: var(--font-secondary);
+        font-size: 30px;
+    }
+
+    .container__title{
+        font-weight: 400;
+        display: block;
+    }
+
+    .container__title--bold {
+        font-weight: 700;
+    }
+
+    .options{
+        display: flex;
+    }
+
+    .option__item{
+        padding: 0 1em;
+        text-transform: uppercase;
+    }
+
+    .option__link{
+        text-decoration: none;
+        color: var(--black);
+    }
+
+    .container__image-transparent{
+        display: none;
+    }
+
+    .header__menu-hamburguer{
+        display: none;
+    }
+
+    .option__button:checked ~ .list-menu {
+        display: block;
+        width: auto;
+    }
+    
+    .option__button{
+        display: none;
+    }
+
+    .option__button:checked ~ .option__label > .option__item{
+        background: var(--gradient-blue);
+        color: var(--white);
+    }
+    
+    .option__item {
+        padding: 2em 1em;
+    }
+
+    .list-menu__item:hover{
+        background: var(--gradient-blue);
+    }
+
+    .list-menu__item:hover > .list-menu__link{
+        -webkit-text-fill-color: var(--white);
+        text-decoration: none;
+    }
+
+    .list-menu {
+        background-color: var(--white);
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .container__link{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--black);
+    }
+
+    .header{
+        padding: 0 2em;
+    }
+
+    .options{
+       margin-right: auto; 
+    }
+
+    .container__text{
+        display: block;
+    }
 }
